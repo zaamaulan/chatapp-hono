@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "dev:socket": "tsx watch src/socket.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "db:seed": "tsx src/db/seed.ts"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "@hono/node-server": "^1.19.2",
+    "@socket.io/admin-ui": "^0.5.1",
+    "bcrypt": "^6.0.0",
+    "better-auth": "^1.3.23",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.6",
+    "hono": "^4.9.6",
+    "pg": "^8.16.3",
+    "socket.io": "^4.8.1",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^20.19.17",
+    "@types/pg": "^8.15.5",
+    "drizzle-kit": "^0.31.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@9.12.2"
+}

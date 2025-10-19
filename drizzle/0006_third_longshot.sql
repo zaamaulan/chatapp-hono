@@ -1,0 +1,1 @@
+ALTER TABLE "conversation" ADD COLUMN "last_message_at" timestamp DEFAULT now() NOT NULL;
